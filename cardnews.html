@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<style>
+		.collapse{ width: 500px; margin: 100px; }
+		.collapse>button{ height: 40px; width:100%; background-color: skyblue; 
+				border: 1px solid blue; 
+		}
+		.panel{ height: 0px; border: 1px solid gray; overflow: hidden;
+				transition: 0.3s;
+		}
+        button{display: flex; justify-content: space-between; align-items: center;}
+		button.red{ background-color: red;}
+		.active{ height: 200px;}
+	</style>
+</head>
+<body>
+	<div class="collapse">
+		<button> <span> 3.</span> 한국 야쿠르트 온라인몰인 'FREDIT' 입점소식! <span>2021-06-25</span></button>
+		<div class="panel">
+			<div>
+				 
+                한국 야쿠르트 온라인몰인 'FREDIT'에 퀘스크렘 크림치즈가 입점되었습니다!
+                
+                새로운 크림치즈의 기준, 
+                퀘스크렘 크림치즈가 온라인몰 'FREDIT'에 런칭되었습니다.
+                (2021년 6월 15일)
+                
+                이제부턴 정직한 신선 유기농 선별삽인 FREDIT에서
+                퀘스크렘 크림치즈를 만나보세요 !
+                
+                (입점품목 : 퀘스크렘 레귤러 / 라이트 / 갈릭&허브)   
+			</div>
+		</div>
+		<button> <span> 2.</span> '이은정 쉐프'와 함께하는  제과세미나 <span>2021-06-25</span> </button>
+		<div class="panel">
+			<div>
+			 
+            안녕하세요!
+            퀘스크렘 엠버서더 '이은정 쉐프'의  제과세미나가
+            지난 7월 7일  ‘곰표키친’에서 개최되었습니다-!
+            
+            특히 이번 세미나는 베이킹몰인 '브레드가든'과 함께
+            온라인과 오프라인이 병행되어 진행되었는데요!
+            
+            그럼 지금부터, 
+            7/7 세미나의 생생한 현장 후기를 전달드립니다. 
+			</div>
+		</div>
+		<button> <span> 1.</span> '퀘스크렘 체험단' 모집!  <span>2021-06-25</span></button>
+		<div class="panel">
+			<div>
+                
+				자연치즈의 신선한 산미와
+                버터밀크의 부드러운 크림 맛이
+                완벽한 조화를 이루는
+                스페인 크림치즈 퀘스크렘!
+                퀘스크렘 4종을 나만의 레시피로 활용할
+                퀘스크렘 체험단 300명을 모집합니다.
+                <체험단 신청하기>로 참여하세요!
+			</div>
+		</div>
+	</div>
+	<script src="./js/jquery-3.6.0.min.js"></script>
+	<script>
+		$(function(){
+			 $('.collapse>button').click(function(){
+				 
+                $('.panel').removeClass('active');
+                $(this).next().addClass('active');
+                $(this).addClass('red');
+				 
+			 })
+		})
+	</script>
+</body>
+</html>

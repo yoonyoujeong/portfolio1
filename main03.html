@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quescrem</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+
+
+         @font-face {
+            font-family: cafe;
+            src: url(./font/Cafe24Danjunghae/Cafe24Danjunghae.ttf);
+        }
+         @font-face {
+            font-family: kopub;
+            src: url(./font/kopub/KoPubDotumLight.ttf);
+        }
+
+
+
+        body{ overflow-x: hidden;}
+        .background{ position: absolute; z-index: -1; top:0; left:0; right:0; bottom:0; 
+                    height: 1000px;
+                    background-image: url(./images/backgroundreal.jpg); background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    
+                }
+ 
+        header{ width:100%; margin: auto;  background-color: #154f8f;
+                position: fixed; top: 0; left: 50%; transform: translateX(-50%); }
+        nav{ width:1050px; margin: auto; display: flex; height: 75px;
+            align-items: center; justify-content: space-between; 
+            font-family: 'cafe';  font-weight: normal; font-size: 16px;  
+            
+        }
+        
+        .lnb{ display: flex; width: 33.333333%;}
+        .lnb li{ margin-right:50px;}
+        .lnb a{ display: block; height: 50px; 
+                line-height: 50px; color: white;
+        }
+        .gnb{ display: flex; width: 33.333333%; justify-content: flex-end; }
+        .gnb li{ margin-left:5px;}
+        .gnb li:nth-child(2){ margin-left:50px;}
+        .gnb li:nth-child(3){ margin-left:50px;}
+        .gnb a{ display: block; height: 50px; 
+                line-height: 50px; color: white;
+        }
+        .gnb img{ padding-top: 10px; }
+        h1{ height:70px; width: 33.333333%; 
+            text-align: center; }
+
+      
+    
+
+        section{display: flex; justify-content: space-evenly;}
+        .mainTextl{position: relative; margin: auto; left:700px;
+             height: 900px; width: 1050px;}
+        .mainText01l{padding-top: 200px; position: absolute;  top: -11px;}
+
+        .mainText02l{padding: 180px 20px 0;position: absolute; z-index:99 ; top: 480px;}
+        .mainText02l img{ height: 90px; position: absolute; top: 180px; left: 1px;}
+        .arrow01l>img{  width: 60px; position: absolute; top: 620px; left: -55px; z-index: 1;} 
+
+        
+
+        h2{font-family: 'cafe';
+           font-weight: normal; font-size: 38px; color: #492931;}
+        h3{font-family: 'cafe';
+        font-weight: normal; font-size: 26px; color: white;}
+        .mainText01l p{padding-top: 10px; text-align: justify;
+                      font-family: 'kopub'; line-height: 1.5em; 
+                      font-weight: normal; font-size: 16px; color: #313131; text-align: justify;}
+        .mainText02l p{padding: 10px;
+                      font-family: 'kopub'; line-height: 1.5em;
+                      font-weight: normal; font-size: 16px; color: white; text-align: justify;}
+                      
+       .btnProductl{position: absolute; top: 755px; display: flex; font-family: 'kopub'; font-weight: normal;}
+        .btnProductl ul{margin-right:18px;}
+        .btnProductl a{color: white; background-color: #3786b1; padding: 1em 1.5em;
+                    display: block; border: 1px solid #3786b1; border-radius: 30px;}
+
+        .blueberrybreadl{position: relative; margin: auto;}
+        .blueberrybreadl img:nth-of-type(1){position: absolute;  width: 350px; left: -92px; top: -650px;}
+        .blueberrybreadl img:nth-of-type(2){position: absolute; width:620px; left: -550px; top: -750px;}
+        .blueberrybreadl img:nth-of-type(3){position: absolute; width: 320px; left: -170px; top: -368px;}
+        .blueberrybreadl img:nth-of-type(4){position: absolute; width: 40px; left:-550px; top: -180px;}
+        .blueberrybreadl img:nth-of-type(5){position: absolute; width: 125px; left:-510px; top: -160px; }
+        .blueberrybreadl img:nth-of-type(6){position: absolute; width:160px; left:-450px; top: -790px; z-index: 99;}
+        .blueberrybreadl img:nth-of-type(7){position: absolute; width: 240px; left:-240px; top: -800px; z-index: 99;}
+        
+       
+
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+ 
+   
+
+        <div class="mainContents3">
+            <section>
+                <div class="mainTextl">
+                    <div class="mainText01l">
+                        <h2> 크림치즈의 새로운 기준</h2>
+                        <p>
+                            스페인 최대 우유 생산지 갈리시아의 산티아고 대학 치즈<br>
+                            메이커들이 모여 설립한 퀘스크렘은 “크림치즈의 혁신을<br>
+                            보여주자”는 모토로 차별화 된 제품 생산에 주력합니다.
+                        </p>
+                    </div>
+                    <div class="arrow01l"><img src="./images/arrow01.png" alt=""></div>
+                    <div class="mainText02l">
+            
+                        <h3>
+                            퀘스크렘 블루치즈 크림치즈 200g
+                        </h3>
+                        <p>
+                            신선한  초지 방목 원유로 만든 블루치즈 <br>
+                            특유의 풍미가 녹아든 크림치즈
+                        </p>
+                        <img src="./images/bar.png" alt="">
+            
+            
+                    </div>
+                    <div class="btnProductl">
+                        <ul>
+                            <li><a href="#">제품 바로가기</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">레시피 바로가기</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+                <!-- section1 end -->
+            <section>
+                <div class="blueberrybreadl">
+                    <img src="./images/main01_text.png" alt="">
+                    <img src="./images/blueberrybread.png" alt="">
+                    <img src="./images/prod66.png" alt="">
+                    <img src="./images/arrow02.png" alt="">
+                    <img src="./images/blueberrybreadText.png" alt="">
+                    <img src="./images/creamcheese.png" alt="">
+                    <img src="./images/creamcheesespoon.png" alt="">
+                </div>
+            </section>
+        </div>
+
+           
+
+
+            <header>
+                <nav>
+                    <ul class="lnb">
+                            <li><a href="#">quescrem</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Recipe</a></li>
+                    </ul>
+        
+                    <h1>
+                        <a href="#">
+                           <img src="./images/logo_white.png" alt="">
+                        </a>
+                    </h1>
+        
+                    <ul class="gnb">
+                            <li><a href="#">Notice</a></li>
+                            <li><a href="#">Maps</a></li>
+                            <li>
+                                <a href="#">
+                                   <img src="./images/ico_global_cart.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                   <img src="./images/ico_global_contact.png" alt="">
+                                </a>
+                            <li>
+                                <a href="#">
+                                   <img src="./images/ico_facebook.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                   <img src="./images/ico_instagram.png" alt="">
+                                </a>
+                            </li>
+                    </ul>
+                </nav>
+            </header>
+           
+        
+            <section style="height: 3000px;"></section>
+   
+   
+    
+</body>
+</html>

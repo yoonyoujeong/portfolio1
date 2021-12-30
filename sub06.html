@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>sticky</title>
+	<link rel="stylesheet" href="./css/reset.css">
+    <link rel="shortcut icon" type="image/x-icon" href="quescrem.ico" />
+    <link rel="apple-touch-icon" href="quescrem.ico" />
+	<style>
+         @font-face {
+            font-family: cafe;
+            src: url(./font/Cafe24Danjunghae/Cafe24Danjunghae.ttf);
+        }
+         @font-face {
+            font-family: kopub;
+            src: url(./font/kopub/KoPubDotumLight.ttf);
+        }
+       
+        body{ overflow-x: hidden;}
+ 
+        header{ width:100%; margin: auto;  background-color: #154f8f; z-index: 999;
+                position: fixed; top: 0; left: 50%; transform: translateX(-50%); }
+        nav{ width:1050px; margin: auto; display: flex; height: 75px;
+            align-items: center; justify-content: space-between; 
+            font-family: 'cafe';  font-weight: normal; font-size: 16px;  
+            
+        }
+        
+        .lnb{ display: flex; width: 33.333333%;}
+        .lnb li{ margin-right:50px; } 
+        .lnb a{ display: block; height: 50px; 
+                line-height: 50px; color: white;
+        }
+        .gnb{ display: flex; width: 33.333333%; justify-content: flex-end; }
+        .gnb li{ margin-left:5px;}
+        .gnb li:nth-child(2){ margin-left:50px;}
+        .gnb li:nth-child(3){ margin-left:50px;}
+        .gnb a{ display: block; height: 50px; 
+                line-height: 50px; color: white;
+        }
+        .gnb img{ padding-top: 10px; }
+        /* header End */
+        footer {
+            background-color: #154f8f;
+            height: 280px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer {
+            width: 1050px;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            justify-content: center;
+        }
+
+       
+        .footer img {
+            width: calc( 250px / 1.2);
+            height: calc( 80px / 1.2);
+        }
+        .footer>ul>li{color: #fff; font-size: 12px; margin-left: 30px; line-height: 1.7em;}
+        /* footer End */
+
+
+        section{width: 1050px;  position: relative; margin: auto;}
+
+        /* slide Start */
+        .container { position: relative;
+        background:#000;
+        width:500px;
+      
+        }
+
+        .slideshow_wrapper {
+        width:500px;
+        height:600px;
+        overflow: hidden;
+        justify-content: flex-start;
+        align-self: flex-start;
+        }
+
+        .slideshow {
+        width:1500px;
+        height:280px;
+        margin: 0 0 0 -1000px;
+        position: relative; left: -500px;
+        -webkit-animation-name: slide_animation;
+        -webkit-animation-duration:10s;
+        -webkit-animation-iteration-count:infinite;
+        -webkit-animation-direction:alternate;
+        -webkit-animation-play-state: running;
+        }
+
+        .slide {
+        
+        width:500px;
+        height: 600px;
+        position:relative;
+        float:left;
+        overflow:hidden;
+        
+        }
+
+        .slideshow img{
+        width:500px; height:600px;
+        }
+
+        @-webkit-keyframes slide_animation {
+        
+        0% {left:0px;}
+        10% {left:500px;}
+        20% {left:500px;}
+        30% {left:500px;}
+        40% {left:500px;}
+        50% {left:500px;}
+        60% {left:500px;}
+        70% {left:1000px;}
+        80% {left:1000px;}
+        90% {left:1000px;}
+        100% {left:1000px;}
+        
+        
+        }
+            
+	</style>
+</head>
+<body>
+<section>
+    <div class="container">
+        <div class="slideshow_wrapper">
+          <div class="slideshow">
+            <div class="slide_one slide">
+              <img src="./images/slide1.jpg" />
+            </div>
+            
+            <div class="slide_two slide">
+              <img src="./images/slide2.jpg" />
+            </div>
+            
+             <div class="slide_three slide">
+            <img src="./images/slide3.jpg" alt="">
+            </div>
+          </div></div></div></div>
+    
+</div>
+</section>
+<section>
+
+</section>
+<section>
+
+</section>
+
+
+
+    <footer>
+        <div class="footer">
+            <img src="./images/quescrem_white_logo.png" alt="">
+            <ul>
+                <li>
+                    공식수입사 <br>
+                    대한제분(주) 대표이사 : 송인석 <br>
+                    서울특별시 중구 세종대로 39 상공회의소회관 14층 <br>
+                    고객센터 080-330-3366 (수신자부담)<br>
+                    food_business@dhflour.co.kr <br>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    Quescrem (Spain)<br>
+                    POLÍGONO INDUSTRIAL CASTRO RIBERAS DE LEA P. 54-57 27260, LUGO<br>
+                    +34 982 31 02 76<br>
+                    INFO@QUESCREM.ES<br>
+                    Copyright © 2020 Daehan Flour CO.,LTD. ALL RIGHTS RESERVED
+                </li>
+            </ul>
+    </footer>
+    <!-- footer End -->
+	<header>
+        <nav>
+            <ul class="lnb">
+                    <li><a href="#">quescrem</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Recipe</a></li>
+            </ul>
+
+            <h1>
+                <a href="#">
+                   <img src="./images/logo_white.png" alt="">
+                </a>
+            </h1>
+
+            <ul class="gnb">
+                    <li><a href="#">Notice</a></li>
+                    <li><a href="#">Maps</a></li>
+                    <li>
+                        <a href="#">
+                           <img src="./images/ico_global_cart.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                           <img src="./images/ico_global_contact.png" alt="">
+                        </a>
+                    <li>
+                        <a href="#">
+                           <img src="./images/ico_facebook.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                           <img src="./images/ico_instagram.png" alt="">
+                        </a>
+                    </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header End -->
+    <div class="background"></div>
+
+  <!-- partial -->
+  <script  src="./script.js"></script>
+      
+</body>
+</html>

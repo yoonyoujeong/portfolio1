@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quescrem</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+
+         /* section{width: 1000px; height: 4000px; background-color: salmon;
+            position: relative; margin: auto; } */
+
+            @font-face {
+            font-family: cafe;
+            src: url(./font/Cafe24Danjunghae/Cafe24Danjunghae.ttf);
+        }
+         @font-face {
+            font-family: kopub;
+            src: url(./font/kopub/KoPubDotumLight.ttf);
+        }
+
+
+
+
+
+
+
+
+
+        body{ overflow-x: hidden;}
+        .background{ position: absolute; z-index: -1; top:0; left:0; right:0; bottom:0;
+                    background-image: url(./images/backgroundreal.jpg); background-repeat: no-repeat;
+                  background-size: cover;
+                    background-position: center;
+                    
+                }
+ 
+        header{ width:100%; margin: auto;  background-color: #154f8f;
+                position: fixed; top: 0; left: 50%; transform: translateX(-50%); }
+        nav{ width:1050px; margin: auto; display: flex; height: 75px;
+            align-items: center; justify-content: space-between; 
+            font-family: 'cafe';  font-weight: normal; font-size: 16px;  
+            
+        }
+        
+        .lnb{ display: flex; width: 33.333333%;}
+        .lnb li{ margin-right:50px;}
+        .lnb a{ display: block; height: 50px; 
+                line-height: 50px; color: white;
+        }
+        .gnb{ display: flex; width: 33.333333%; justify-content: flex-end; }
+        .gnb li{ margin-left:5px;}
+        .gnb li:nth-child(2){ margin-left:50px;}
+        .gnb li:nth-child(3){ margin-left:50px;}
+        .gnb a{ display: block; height: 50px; 
+                line-height: 50px; color: white;
+        }
+        .gnb img{ padding-top: 10px; }
+        h1{ height:70px; width: 33.333333%; 
+            text-align: center; }
+    
+
+
+        section{display: flex; justify-content: space-evenly;}
+        .mainTextb{position: relative; margin: auto; left:600px;
+             height: 900px; width: 1050px;}
+        .mainText01b{padding-top: 200px; position: absolute; left: -607px; top: -15px;}
+
+      
+        .mainText02b{padding: 180px 20px 0;position: absolute; z-index:99 ; left:155px;top: 480px;}
+        .mainText02b img{ height: 90px; position: absolute; top: 180px; left: 1px;}
+        
+
+        h2{font-family: 'cafe';
+           font-weight: normal; font-size: 38px; color: #492931;}
+        h3{font-family: 'cafe';
+        font-weight: normal; font-size: 26px; color: white;}
+        .mainText01b p{padding-top: 10px; text-align: justify;
+                      font-family: 'kopub'; line-height: 1.5em;
+                      font-weight: normal; font-size: 16px; color: #313131; text-align: justify;}
+        .mainText02b p{padding: 10px;
+                      font-family: 'kopub'; line-height: 1.5em;
+                      font-weight: normal; font-size: 16px; color: white; text-align: justify;}
+                      
+        .arrow01b>img{  width: 60px; position: absolute; top: 600px; left: 135px; z-index: 1;} 
+
+   
+        .btnProductb{position: absolute; left: 155px; top: 755px; display: flex; font-family: 'kopub'; font-weight: normal;}
+        .btnProductb ul{margin-right:18px;}
+        .btnProductb a{color: white; background-color: #3786b1; padding: 1em 1.5em;
+                    display: block; border: 1px solid #3786b1; border-radius: 30px;}
+        
+
+        .basquecheesecakeb{position: relative; margin: auto;}
+        .basquecheesecakeb img:nth-of-type(1){position: absolute;  width: 350px; left: -139px; top: -635px;}
+        .basquecheesecakeb img:nth-of-type(2){position: absolute; width: 945px; left: -670px; top: -545px;}
+        .basquecheesecakeb img:nth-of-type(3){position: absolute; width: 255px; left: -73px; top: -373px;}
+        .basquecheesecakeb img:nth-of-type(4){position: absolute; width: 68px; left:-600px; top: -177px;}
+        .basquecheesecakeb img:nth-of-type(5){position: absolute; width: 125px; left:-510px; top: -157px; }
+        .basquecheesecakeb img:nth-of-type(6){position: absolute; width: 247px; left:-55px; top: -752px; z-index: -1;}
+        .basquecheesecakeb img:nth-of-type(7){position: absolute; width: 375px; left:170px; top: -800px; z-index: -1;}
+        
+       
+
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+ 
+   
+
+            <div class="mainContents2">
+                <section>
+                    <div class="mainTextb">
+                        <div class="mainText01b">
+                            <h2> 버터밀크의 뛰어난 맛과 작업성</h2>
+                            <p>
+                                퀘스크렘 크림치즈는 버터밀크를 주원료로 만들어, 다른 제품들에 비해<br>
+                                텍스쳐가 더 부드럽고 크리미해 작업성이 무척 좋습니다.
+                            </p>
+                        </div>
+                
+                        <div class="arrow01b"><img src="./images/arrow01.png" alt=""></div>
+                        <div class="mainText02b">
+                
+                            <h3>
+                                플러스 크림치즈
+                            </h3>
+                            <p>
+                                내구성을 강화해 냉각, 가열에도 질감과 맛을 <br>
+                                유지하는 혁신적인 크림치즈
+                            </p>
+                            <img src="./images/bar.png" alt="">
+                
+                
+                        </div>
+                        <div class="btnProductb">
+                            <ul>
+                                <li><a href="#">제품 바로가기</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">레시피 바로가기</a></li>
+                            </ul>
+                        </div>
+                
+                    </div>
+                </section>
+                <section>
+                    <div class="basquecheesecakeb">
+                        <img src="./images/main02_text.png" alt="">
+                        <img src="./images/baskcheesecake2.png" alt="">
+                        <img src="./images/product2.png" alt="">
+                        <img src="./images/arrow02.png" alt="">
+                        <img src="./images/basquecheesecakeText.png" alt="">
+                        <img src="./images/breadknife.png" alt="">
+                        <img src="./images/egg.png" alt="">
+                    </div>
+                </section>
+            </div>
+       
+
+           
+
+
+            <header>
+                <nav>
+                    <ul class="lnb">
+                            <li><a href="#">quescrem</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Recipe</a></li>
+                    </ul>
+        
+                    <h1>
+                        <a href="#">
+                           <img src="./images/logo_white.png" alt="">
+                        </a>
+                    </h1>
+        
+                    <ul class="gnb">
+                            <li><a href="#">Notice</a></li>
+                            <li><a href="#">Maps</a></li>
+                            <li>
+                                <a href="#">
+                                   <img src="./images/ico_global_cart.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                   <img src="./images/ico_global_contact.png" alt="">
+                                </a>
+                            <li>
+                                <a href="#">
+                                   <img src="./images/ico_facebook.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                   <img src="./images/ico_instagram.png" alt="">
+                                </a>
+                            </li>
+                    </ul>
+                </nav>
+            </header>
+           
+        
+            <section style="height: 3000px;"></section>
+   
+    
+</body>
+</html>

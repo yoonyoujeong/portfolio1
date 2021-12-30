@@ -1,0 +1,1 @@
+// a quick example of a simple CSS3 auto slide for reference; easily customizable
